@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background{
+  background-color: #f6f9fc;
+  padding: 50px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  max-width: 90%;
+  margin: auto;
+}
+.d_flex{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.c_flex{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.f_flex{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+li{
+  list-style: none;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.RText{
+  text-align: right;
+}
+input,
+button{
+  border: none;
+  outline: none;
+  background-color: none;
+}
+.row{
+  width: 50%;
+}
+.icon_circle{
+  /* width: 50px;
+  height: 50px; */
+  /* line-height: 50px; */
+  background-color: #f3f5f9;
+  text-align: center;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.boxShadow{
+  box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
 }
 
-.App-link {
-  color: #61dafb;
+/*-------------------category------------------------*/
+.contentWidth{
+  width: 77%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category{
+  width: 23%;
+  height: 580px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 15px 0;
+  box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
+  border-right: 1px solid #00684a;
 }
+.category img{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+.category span{
+  margin: 10px 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.category .box {
+  transition: 0.5s;
+  padding: 0px 20px;
+}
+.category .box:hover{
+  background: #023430;
+  color: #fff;
+  border-radius: 5px;
+  cursor: copy;
+}
+/*-------------------category------------------------*/
